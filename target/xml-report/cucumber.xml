@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="60.268">
-    <testcase classname="Register olma" name="TC_016 Account must be confirmed via email" time="60.001">
-        <system-out>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="52.793">
+    <testcase classname="Register olma" name="TC_016 Account must be confirmed via email" time="52.507">
+        <failure message="expected [[Hubcomfy] Successfully Registered] but found [[Hubcomfy] Email Verification Code - 253162]" type="java.lang.AssertionError">
             <![CDATA[Given User goes to hubcomfyUrl..............................................passed
 Then User verifies that he or she went to the home page.....................passed
 Then User click the register button.........................................passed
@@ -19,8 +19,19 @@ And User clicks the register button.........................................pass
 Then The user verifies seeing the text Welcome to Hubcomfy!.................passed
 And The user goes to minuteEmail to verify incoming email...................passed
 And The user clicks on the Hubcomfy email...................................passed
-And The user confirms that their My Account is visible by clicking on the Visit now... link in the emaAnd.passed
+And The user confirms that their My Account is visible by clicking on the Visit now... link in the emaAnd.failed
+
+StackTrace:
+java.lang.AssertionError: expected [[Hubcomfy] Successfully Registered] but found [[Hubcomfy] Email Verification Code - 253162]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinitions.RegisterStepDef.theUserConfirmsThatTheirMyAccountIsVisibleByClickingOnTheVisitNowLinkInTheEmaAnd(RegisterStepDef.java:269)
+	at ✽.The user confirms that their My Account is visible by clicking on the Visit now... link in the emaAnd(file:///C:/HubcomfyCucumberE/src/test/resources/features/register.feature:183)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>
