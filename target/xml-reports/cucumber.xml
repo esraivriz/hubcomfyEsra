@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="72.005">
+    <testcase classname="Grid Test" name="TC_001 Email cannot be left blank and must be a valid email" time="29.866">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()='Become a Vendor']&quot;}&#10;  (Session info: chrome=111.0.5563.65)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.6.0', revision: '79f1c02ae20'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [e42cec5ed4de7db469fa3c45fd1fe212, findElement {using=xpath, value=//*[text()='Become a Vendor']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\PURPLE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61533}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61533/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e42cec5ed4de7db469fa3c45fd1fe212" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given GridChrome User goes to Hubcomfy......................................passed
+Then Grid User verifies that he or she went to the home page................passed
+And Grid User click the register button.....................................passed
+And Grid User clicks on the Become a vendor link............................failed
+When Grid User go to minutesEmail to receive a valid email..................skipped
+And Grid User receive the email from the page they go to....................skipped
+And Grid The user returns to the hub-comfy page and enters the email in the email box.skipped
+And Grid User clicks the RE-SEND CODE button................................skipped
+And Grid The user goes back to minutesEmail to get the code sent to the email address.skipped
+And Grid User receives the code and returns to Hubcomfy.....................skipped
+And Grid The user enters the code that comes to the e-mail address entered in the Verification Code box.skipped
+And Grid User enter a valid password........................................skipped
+And Grid User enters valid confirm password.................................skipped
+And Grid User clicks the register button....................................skipped
+Then Grid The user verifies seeing the text Welcome to Hubcomfy!............skipped
+And Grid User quits page....................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Become a Vendor']"}
+  (Session info: chrome=111.0.5563.65)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e42cec5ed4de7db469fa3c45fd1fe212, findElement {using=xpath, value=//*[text()='Become a Vendor']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\PURPLE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61533}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61533/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e42cec5ed4de7db469fa3c45fd1fe212
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
+	at stepDefinitions.GridStepDef.gridUserClicksOnTheBecomeAVendorLink(GridStepDef.java:56)
+	at ✽.Grid User clicks on the Become a vendor link(file:///C:/HubcomfyCucumberE/./src/test/resources/features/grid.feature:8)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Grid Test" name="TC_001 Email cannot be left blank and must be a valid email 2" time="13.397">
+        <failure message="element not interactable&#10;  (Session info: MicrosoftEdge=111.0.1661.44)&#10;Build info: version: '4.6.0', revision: '79f1c02ae20'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [ee4ebd0bf75f12c65953a04f965544de, clickElement {id=b065cab2-2805-4065-b888-6b79d8b7aedb}]&#10;Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:61818}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\PURPLE~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.104:4444/ses..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[RemoteWebDriver: msedge on WINDOWS (ee4ebd0bf75f12c65953a04f965544de)] -&gt; css selector: .register.inline-type]&#10;Session ID: ee4ebd0bf75f12c65953a04f965544de" type="org.openqa.selenium.ElementNotInteractableException">
+            <![CDATA[Given GridEdge User goes to Hubcomfy........................................passed
+Then Grid User verifies that he or she went to the home page................passed
+And Grid User click the register button.....................................failed
+And Grid User clicks on the Become a vendor link............................skipped
+When Grid User go to minutesEmail to receive a valid email..................skipped
+And Grid User receive the email from the page they go to....................skipped
+And Grid The user returns to the hub-comfy page and enters the email in the email box.skipped
+And Grid User clicks the RE-SEND CODE button................................skipped
+And Grid The user goes back to minutesEmail to get the code sent to the email address.skipped
+And Grid User receives the code and returns to Hubcomfy.....................skipped
+And Grid The user enters the code that comes to the e-mail address entered in the Verification Code box.skipped
+And Grid User enter a valid password........................................skipped
+And Grid User enters valid confirm password.................................skipped
+And Grid User clicks the register button....................................skipped
+Then Grid The user verifies seeing the text Welcome to Hubcomfy!............skipped
+And Grid User quits page....................................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=111.0.1661.44)
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [ee4ebd0bf75f12c65953a04f965544de, clickElement {id=b065cab2-2805-4065-b888-6b79d8b7aedb}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:61818}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: C:\Users\PURPLE~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.104:4444/ses..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: msedge on WINDOWS (ee4ebd0bf75f12c65953a04f965544de)] -> css selector: .register.inline-type]
+Session ID: ee4ebd0bf75f12c65953a04f965544de
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at stepDefinitions.GridStepDef.gridUserClickTheRegisterButton(GridStepDef.java:51)
+	at ✽.Grid User click the register button(file:///C:/HubcomfyCucumberE/./src/test/resources/features/grid.feature:26)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Grid Test" name="TC_002 As a vendor, email, and password must be entered and My Account must appear in the system" time="12.081">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given GridChrome User goes to Hubcomfy......................................passed
+And Grid User clicks Sign In................................................undefined
+And Grid User enters a valid email in the email box.........................skipped
+And Grid User enters the valid password in the password box.................skipped
+And Grid User click the SIGN IN button......................................skipped
+Then Grid The user confirms that they went to the My Account page...........skipped
+And Grid User quits page....................................................skipped
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Grid Test" name="TC_002 As a vendor, email, and password must be entered and My Account must appear in the system 2" time="16.304">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given GridEdge User goes to Hubcomfy........................................passed
+And Grid User clicks Sign In................................................undefined
+And Grid User enters a valid email in the email box.........................skipped
+And Grid User enters the valid password in the password box.................skipped
+And Grid User click the SIGN IN button......................................skipped
+Then Grid The user confirms that they went to the My Account page...........skipped
+And Grid User quits page....................................................skipped
+]]>
+        </failure>
+    </testcase>
+</testsuite>

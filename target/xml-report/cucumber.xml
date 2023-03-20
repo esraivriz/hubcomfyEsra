@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="52.793">
-    <testcase classname="Register olma" name="TC_016 Account must be confirmed via email" time="52.507">
-        <failure message="expected [[Hubcomfy] Successfully Registered] but found [[Hubcomfy] Email Verification Code - 253162]" type="java.lang.AssertionError">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="62.069">
+    <testcase classname="Register olma" name="TC_014 Password must be reused in the same way" time="61.788">
+        <system-out>
             <![CDATA[Given User goes to hubcomfyUrl..............................................passed
 Then User verifies that he or she went to the home page.....................passed
 Then User click the register button.........................................passed
 Then User clicks on the Become a vendor link................................passed
-When User go to minuteEmail to receive a valid email........................passed
+When User go to minuteEmail to receive a valid and unique email.............passed
 And User receive the email from the page they go to.........................passed
 And The user returns to the hub-comfy page and enters the email in the email box.passed
 And User clicks the RE-SEND CODE button.....................................passed
@@ -16,22 +16,15 @@ And The user enters the code that comes to the e-mail address entered in the Ver
 And User enter a valid password.............................................passed
 And The user enters the same valid password in the confirm password as they enter in the password.passed
 And User clicks the register button.........................................passed
-Then The user verifies seeing the text Welcome to Hubcomfy!.................passed
-And The user goes to minuteEmail to verify incoming email...................passed
-And The user clicks on the Hubcomfy email...................................passed
-And The user confirms that their My Account is visible by clicking on the Visit now... link in the emaAnd.failed
-
-StackTrace:
-java.lang.AssertionError: expected [[Hubcomfy] Successfully Registered] but found [[Hubcomfy] Email Verification Code - 253162]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at stepDefinitions.RegisterStepDef.theUserConfirmsThatTheirMyAccountIsVisibleByClickingOnTheVisitNowLinkInTheEmaAnd(RegisterStepDef.java:269)
-	at ✽.The user confirms that their My Account is visible by clicking on the Visit now... link in the emaAnd(file:///C:/HubcomfyCucumberE/src/test/resources/features/register.feature:183)
+And The user verifies seeing the text Welcome to Hubcomfy!..................passed
+And User quits page.........................................................passed
 ]]>
-        </failure>
+        </system-out>
+    </testcase>
+</testsuite>
+......passed
+And User quits page.........................................................passed
+]]>
+        </system-out>
     </testcase>
 </testsuite>
